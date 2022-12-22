@@ -1,3 +1,5 @@
+import resetContent from './removeChild';
+
 const home = (() => {
 	const container = document.querySelector('#content');
 
@@ -21,6 +23,8 @@ const home = (() => {
 	}	
 
 	const render = () => {
+		console.log("CLicked!")
+		resetContent();
 		renderHeroSection();
 	}
 
